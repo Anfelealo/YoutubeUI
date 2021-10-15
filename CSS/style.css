@@ -16,6 +16,131 @@
     height: calc(100% - 58px);
 }
 
+
+
+.scrRec{
+    background-color: rgb( 32, 32, 32) !important;
+}
+
+.suggestionsContainer {
+    position: relative;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: 56px;
+    word-spacing: 10px;
+    padding-left: 25px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.despLeft {
+    position: absolute;
+    left: 1%;
+    display: block;
+}
+
+.despRight {
+    position: absolute;
+    right: 1%;
+    display: block;
+}
+
+.buttonNav{
+    color: rgb(201, 198, 198);
+    background-color: rgb( 32, 32, 32);
+    box-shadow: 5px 0px 50px 100px rgba(32,32,32,1);
+    -webkit-box-shadow: 5px 0px 50px 100px rgba(32,32,32,1);
+    -moz-box-shadow: 5px 0px 50px 100px rgba(32,32,32,1);
+    width: 50px;
+    height: 50px;
+    padding: 6px 0px;
+    border: 1px solid rgb(32, 32, 32);
+    text-align: center;
+    font-size: 12px;
+}
+
+.despInsRi:Hover{
+    background: blue;
+}
+
+.butsNav{
+    margin-top: .5%;
+    border-radius: 16px;
+    border: 1px solid rgb(95, 95, 95);
+    background-color: rgb(53, 52, 52);
+    color: rgb(233, 231, 231);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.butsNav:hover{
+    background-color: rgb(95, 95, 95);
+}
+
+.butsNav:focus{
+    background-color: rgba(245, 245, 245, 0.973);
+    border: none;
+    color: black;
+}
+
+.prev{
+    position: absolute;
+    top: 105px;
+    width: 70px;
+    padding: 10px;
+    color: white;
+    font-size: 12px;
+    background-color: rgba(99, 97, 99, 0.884);
+    border: none;
+    display: none;
+}
+
+.btnLeft:hover + .prev{
+    display: block;
+}
+
+.despInsRi{
+    position: relative;
+    background: blue !important;
+    z-index: 100;
+
+}
+
+.next{
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 50px;
+    padding: 10px;
+    color: white;
+    font-size: 12px;
+    background-color: rgba(99, 97, 99, 0.884);
+    border: none;
+    display: none;
+}
+
+.despRight:hover .next{
+    display: block;
+}
+
+.buttonNav:active {
+    border-radius: 50%;
+    box-shadow: 5px 0px 50px 100px rgba(32,32,32,1);
+    -webkit-box-shadow: 5px 0px 50px 100px rgba(32,32,32,1);
+    -moz-box-shadow: 5px 0px 50px 100px rgba(32,32,32,1);
+}
+
+.buttonNav:active {
+    background-color: rgba(32, 32, 32) !important;
+}
+
+
+
+
 .sideBar{
     width: 5.4%;
     background-color: rgb( 33, 33, 33);
